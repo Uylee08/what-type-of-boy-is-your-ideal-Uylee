@@ -1,0 +1,34 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #efe0ff;
+    text-align: center;
+    font-family: "Brush Script MT", cursive;
+}
+
+.picture1 {
+    width: 400px;
+   
+
+}
+
+.picture2 {
+    width: 400px;
+    
+
+}
+.coolboy{
+    width: 400px;
+   display:none;
+}
+.coolman{
+    width: 400px;
+   display:none;
+}
+.warmboy{
+    width: 400px;
+   display:none;
+}
+.warmman{
+    width: 400px;
+   display:none;
+}
