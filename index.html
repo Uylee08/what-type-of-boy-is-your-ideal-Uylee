@@ -1,0 +1,113 @@
+<!DOCTYPE html> <html><head>
+        <title>what type of boy is your ideal [Uylee]</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap" rel="stylesheet">
+    <style>body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #efe0ff;
+    text-align: center;
+    font-family: "Brush Script MT", cursive;
+}
+
+.picture1 {
+    width: 400px;
+   
+
+}
+
+.picture2 {
+    width: 400px;
+    
+
+}
+.coolboy{
+    width: 400px;
+   display:none;
+}
+.coolman{
+    width: 400px;
+   display:none;
+}
+.warmboy{
+    width: 400px;
+   display:none;
+}
+.warmman{
+    width: 400px;
+   display:none;
+}</style></head>
+    <body>
+        <div class="title">
+            <h1>what type of boy is your ideal?</h1>
+        </div>
+        <div class="questions1">
+            <h3>How old are your ideal ?</h3>
+            <img class="picture1" alt="many shadow" src="https://pbs.twimg.com/media/FLr9zQGVEAkBZqs.jpg:large">
+           <input class="numberinput" placeholder="number(1-99)">
+          
+            <div class="questions2">
+                <div class="number-massage"></div>
+            
+                <h3>What do you prefer? Cool or warm?</h3>
+            <img class="picture2" alt="A shadow" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDApZaWZlkV5o4op2GIzjNpVSTdbBwJZist8_ZjIPfl0j7RZ3dzX9m37saQfx-Asn-9TU&amp;usqp=CAU">
+          <input class="styleinput" placeholder="warm or cool">  
+            <button class="stylebutton">click</button>
+        <div class="style-massage"></div>
+            </div>
+            
+         </div>
+            this is where the user will see their quiz result!
+     <div class="coolboyscreen">
+        <img class="coolboy" alt="cool boy" src="https://img.wattpad.com/091bb62650786d0dbd612e86f390d4687fd1841a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f7956726c62324e667047666270773d3d2d3136362e313635616434363238393563373839623938383038323539333634392e6a7067?s=fit&amp;w=720&amp;h=720">
+        </div>
+        <div class="coolmanscreen">
+<img class="coolman" alt="cool mman" src="https://i.pinimg.com/736x/34/43/8b/34438b0807d41aea73b4222b505b7480.jpg">
+        </div>
+        <div class="warmboyscreen">
+<img class="warmboy" alt="warm boy" src="https://media.proprofs.com/images/QM/user_images/2503852/New%20Project%20(81)(127).jpg">
+        </div> 
+                <div class="warmmanscreen">
+<img class="warmman" alt="warm man" src="https://i.pinimg.com/750x/bc/97/37/bc9737f9450abad2ba11a3ad3113d1fe.jpg">
+        </div> 
+    
+<script>
+/*__POPCODESTART__*/
+var NumberButton = document.querySelector(".numberbutton");
+var StyleButton = document.querySelector(".stylebutton");
+var Q1 = document.querySelector(".question1");
+var Q2 = document.querySelector(".question2");
+var Coolboyscreen = document.querySelector(".coolboyscreen");
+var coolboy = document.querySelector(".coolboy");
+var coolman = document.querySelector(".coolman");
+var warmboy = document.querySelector(".warmboy");
+var warmman = document.querySelector(".warmman"); //NumberButton.onclick = function() {
+// let NumberInput= document.querySelector(".numberinput").value;
+//if (NumberInput<30&&NumberInput>0){
+// document.querySelector(".number-massage").innerHTML="Great!";
+//  }
+// else if (NumberInput>=30&&NumberInput<99){
+// document.querySelector(".number-massage").innerHTML="Keep going!";
+//  }
+//  else if (NumberInput>=99){
+// document.querySelector(".number-massage").innerHTML="But I want him to stay with you longer";
+// }
+//};
+
+StyleButton.onclick = function () {
+  var NumberInput = document.querySelector(".numberinput").value;
+  var StyleInput = document.querySelector(".styleinput").value;
+
+  if (StyleInput === "cool" && NumberInput < 30 && NumberInput > 0) {
+    coolboy.style.display = "block";
+    document.querySelector(".style-massage").innerHTML = "Good choose!The cool boy coming!";
+  } else if (StyleInput === "cool" && NumberInput >= 30 && NumberInput < 99) {
+    coolman.style.display = "block";
+    document.querySelector(".style-massage").innerHTML = "Good choose!The cool man coming!";
+  } else if (StyleInput === "warm" && NumberInput < 30 && NumberInput > 0) {
+    warmboy.style.display = "block";
+    document.querySelector(".style-massage").innerHTML = "Good choose!The warm boy coming!";
+  } else if (StyleInput === "warm" && NumberInput >= 30 && NumberInput < 99) {
+    warmman.style.display = "block";
+    document.querySelector(".style-massage").innerHTML = "Good choose!The warm man coming!";
+  }
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbIk51bWJlckJ1dHRvbiIsImRvY3VtZW50IiwicXVlcnlTZWxlY3RvciIsIlN0eWxlQnV0dG9uIiwiUTEiLCJRMiIsIkNvb2xib3lzY3JlZW4iLCJjb29sYm95IiwiY29vbG1hbiIsIndhcm1ib3kiLCJ3YXJtbWFuIiwib25jbGljayIsIk51bWJlcklucHV0IiwidmFsdWUiLCJTdHlsZUlucHV0Iiwic3R5bGUiLCJkaXNwbGF5IiwiaW5uZXJIVE1MIl0sIm1hcHBpbmdzIjoiQUFBQSxJQUFJQSxZQUFZLEdBQUVDLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixlQUF2QixDQUFsQjtBQUNBLElBQUlDLFdBQVcsR0FBQ0YsUUFBUSxDQUFDQyxhQUFULENBQXVCLGNBQXZCLENBQWhCO0FBQ0EsSUFBSUUsRUFBRSxHQUFFSCxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsWUFBdkIsQ0FBUjtBQUNDLElBQUlHLEVBQUUsR0FBRUosUUFBUSxDQUFDQyxhQUFULENBQXVCLFlBQXZCLENBQVI7QUFDRyxJQUFJSSxhQUFhLEdBQUVMLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixnQkFBdkIsQ0FBbkI7QUFDSixJQUFJSyxPQUFPLEdBQUVOLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixVQUF2QixDQUFiO0FBQ0EsSUFBSU0sT0FBTyxHQUFFUCxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsVUFBdkIsQ0FBYjtBQUNBLElBQUlPLE9BQU8sR0FBRVIsUUFBUSxDQUFDQyxhQUFULENBQXVCLFVBQXZCLENBQWI7QUFDQSxJQUFJUSxPQUFPLEdBQUVULFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixVQUF2QixDQUFiLEMsQ0FFQTtBQUNDO0FBQ0c7QUFDSTtBQUNOO0FBQ0M7QUFDSztBQUNOO0FBQ0E7QUFDTTtBQUNMO0FBRUg7O0FBR0FDLFdBQVcsQ0FBQ1EsT0FBWixHQUFzQixZQUFXO0FBRTdCLE1BQUlDLFdBQVcsR0FBRVgsUUFBUSxDQUFDQyxhQUFULENBQXVCLGNBQXZCLEVBQXVDVyxLQUF4RDtBQUNBLE1BQUlDLFVBQVUsR0FBRWIsUUFBUSxDQUFDQyxhQUFULENBQXVCLGFBQXZCLEVBQXNDVyxLQUF0RDs7QUFDQyxNQUFJQyxVQUFVLEtBQUcsTUFBYixJQUFxQkYsV0FBVyxHQUFDLEVBQWpDLElBQXFDQSxXQUFXLEdBQUMsQ0FBckQsRUFBdUQ7QUFDcERMLElBQUFBLE9BQU8sQ0FBQ1EsS0FBUixDQUFjQyxPQUFkLEdBQXNCLE9BQXRCO0FBQ0NmLElBQUFBLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixnQkFBdkIsRUFBeUNlLFNBQXpDLEdBQW1ELGtDQUFuRDtBQUF1RixHQUYzRixNQUtJLElBQUlILFVBQVUsS0FBRyxNQUFiLElBQXFCRixXQUFXLElBQUUsRUFBbEMsSUFBc0NBLFdBQVcsR0FBQyxFQUF0RCxFQUF5RDtBQUMzREosSUFBQUEsT0FBTyxDQUFDTyxLQUFSLENBQWNDLE9BQWQsR0FBc0IsT0FBdEI7QUFDQ2YsSUFBQUEsUUFBUSxDQUFDQyxhQUFULENBQXVCLGdCQUF2QixFQUF5Q2UsU0FBekMsR0FBbUQsa0NBQW5EO0FBQXVGLEdBRnRGLE1BSUQsSUFBSUgsVUFBVSxLQUFHLE1BQWIsSUFBcUJGLFdBQVcsR0FBQyxFQUFqQyxJQUFxQ0EsV0FBVyxHQUFDLENBQXJELEVBQXVEO0FBQ3ZESCxJQUFBQSxPQUFPLENBQUNNLEtBQVIsQ0FBY0MsT0FBZCxHQUFzQixPQUF0QjtBQUNDZixJQUFBQSxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsZ0JBQXZCLEVBQXlDZSxTQUF6QyxHQUFtRCxrQ0FBbkQ7QUFBdUYsR0FGeEYsTUFJRSxJQUFJSCxVQUFVLEtBQUcsTUFBYixJQUFxQkYsV0FBVyxJQUFFLEVBQWxDLElBQXNDQSxXQUFXLEdBQUMsRUFBdEQsRUFBeUQ7QUFDNURGLElBQUFBLE9BQU8sQ0FBQ0ssS0FBUixDQUFjQyxPQUFkLEdBQXNCLE9BQXRCO0FBQ0NmLElBQUFBLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixnQkFBdkIsRUFBeUNlLFNBQXpDLEdBQW1ELGtDQUFuRDtBQUF1RjtBQUc5RixDQXRCRCIsInNvdXJjZXNDb250ZW50IjpbImxldCBOdW1iZXJCdXR0b249IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIubnVtYmVyYnV0dG9uXCIpO1xubGV0IFN0eWxlQnV0dG9uPWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuc3R5bGVidXR0b25cIik7XG5sZXQgUTE9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIucXVlc3Rpb24xXCIpO1xuIGxldCBRMj0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5xdWVzdGlvbjJcIik7XG4gICAgbGV0IENvb2xib3lzY3JlZW49IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuY29vbGJveXNjcmVlblwiKTtcbmxldCBjb29sYm95PSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLmNvb2xib3lcIik7XG5sZXQgY29vbG1hbj0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5jb29sbWFuXCIpO1xubGV0IHdhcm1ib3k9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIud2FybWJveVwiKTtcbmxldCB3YXJtbWFuPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLndhcm1tYW5cIik7XG5cbi8vTnVtYmVyQnV0dG9uLm9uY2xpY2sgPSBmdW5jdGlvbigpIHtcbiAvLyBsZXQgTnVtYmVySW5wdXQ9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIubnVtYmVyaW5wdXRcIikudmFsdWU7XG4gICAgLy9pZiAoTnVtYmVySW5wdXQ8MzAmJk51bWJlcklucHV0PjApe1xuICAgICAgICAvLyBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLm51bWJlci1tYXNzYWdlXCIpLmlubmVySFRNTD1cIkdyZWF0IVwiO1xuICAvLyAgfVxuICAgLy8gZWxzZSBpZiAoTnVtYmVySW5wdXQ+PTMwJiZOdW1iZXJJbnB1dDw5OSl7XG4gICAgICAgIC8vIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIubnVtYmVyLW1hc3NhZ2VcIikuaW5uZXJIVE1MPVwiS2VlcCBnb2luZyFcIjtcbiAgLy8gIH1cbiAgLy8gIGVsc2UgaWYgKE51bWJlcklucHV0Pj05OSl7XG4gICAgICAgIC8vIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIubnVtYmVyLW1hc3NhZ2VcIikuaW5uZXJIVE1MPVwiQnV0IEkgd2FudCBoaW0gdG8gc3RheSB3aXRoIHlvdSBsb25nZXJcIjtcbiAgIC8vIH1cblxuLy99O1xuXG5cblN0eWxlQnV0dG9uLm9uY2xpY2sgPSBmdW5jdGlvbigpIHtcblxuICAgIGxldCBOdW1iZXJJbnB1dD0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5udW1iZXJpbnB1dFwiKS52YWx1ZTtcbiAgICBsZXQgU3R5bGVJbnB1dD0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5zdHlsZWlucHV0XCIpLnZhbHVlO1xuICAgICBpZiAoU3R5bGVJbnB1dD09PVwiY29vbFwiJiZOdW1iZXJJbnB1dDwzMCYmTnVtYmVySW5wdXQ+MCl7XG4gICAgICAgIGNvb2xib3kuc3R5bGUuZGlzcGxheT1cImJsb2NrXCI7XG4gICAgICAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnN0eWxlLW1hc3NhZ2VcIikuaW5uZXJIVE1MPVwiR29vZCBjaG9vc2UhVGhlIGNvb2wgYm95IGNvbWluZyFcIjt9XG5cbiAgXG4gICAgZWxzZSBpZiAoU3R5bGVJbnB1dD09PVwiY29vbFwiJiZOdW1iZXJJbnB1dD49MzAmJk51bWJlcklucHV0PDk5KXtcbiAgICAgICBjb29sbWFuLnN0eWxlLmRpc3BsYXk9XCJibG9ja1wiO1xuICAgICAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnN0eWxlLW1hc3NhZ2VcIikuaW5uZXJIVE1MPVwiR29vZCBjaG9vc2UhVGhlIGNvb2wgbWFuIGNvbWluZyFcIjt9XG4gIFxuICBlbHNlICBpZiAoU3R5bGVJbnB1dD09PVwid2FybVwiJiZOdW1iZXJJbnB1dDwzMCYmTnVtYmVySW5wdXQ+MCl7XG4gICAgICAgIHdhcm1ib3kuc3R5bGUuZGlzcGxheT1cImJsb2NrXCI7XG4gICAgICAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnN0eWxlLW1hc3NhZ2VcIikuaW5uZXJIVE1MPVwiR29vZCBjaG9vc2UhVGhlIHdhcm0gYm95IGNvbWluZyFcIjt9ICAgXG4gICAgIFxuICAgICBlbHNlIGlmIChTdHlsZUlucHV0PT09XCJ3YXJtXCImJk51bWJlcklucHV0Pj0zMCYmTnVtYmVySW5wdXQ8OTkpe1xuICAgICAgIHdhcm1tYW4uc3R5bGUuZGlzcGxheT1cImJsb2NrXCI7XG4gICAgICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuc3R5bGUtbWFzc2FnZVwiKS5pbm5lckhUTUw9XCJHb29kIGNob29zZSFUaGUgd2FybSBtYW4gY29taW5nIVwiO30gXG5cbiAgICBcbn07XG5cblxuIl19</script></body></html>
